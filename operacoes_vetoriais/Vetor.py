@@ -13,6 +13,4 @@ class Vetor():
         vetor.append(self.j)
         vetor.append(self.k)
         return vetor
-
-
     
