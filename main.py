@@ -16,6 +16,7 @@ print(subtracao(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
 print(prod_escalar(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
 print(prod_vetorial(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
 print(projecao(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
+print(modulo_prod_vet(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
 
 #PARA TRES VETORES
 vetor3 = Vetor(7, 8, 9)
