@@ -1,23 +1,38 @@
+from distutils.log import error
+from posixpath import split
 from operacoes_vetoriais.Vetor import *
 from operacoes_vetoriais.Operacoes import *
+from operacoes_vetoriais.Mostrar import *
 
+print("--------------------------------------")
 print("Cálculo Vetorial e Geometria Analítica")
+print("--------------------------------------")
 
-#COM APENAS DOIS VETORES POR ENQUANTO
-vetor1 = Vetor(1, 2, 3)
-vetor2 = Vetor(4, 5, 6)
+print("Deseja operar quantos vetores?(2/3) ")
+quant_vet = int(input())
 
-print(vetor1.create_and_see_vetor())
-print(vetor2.create_and_see_vetor())
+#RECEBENDO INPUTS DE 2 VETORES
+print("Digite o vetor 1 (i j k): ")
+aux1 = input()
+aux1_vet = aux1.split()
+vetor1 = Vetor(aux1_vet[0], aux1_vet[1], aux1_vet[2])
 
-#PARA DOIS VETORES
-print(adicao(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
-print(subtracao(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
-print(prod_escalar(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
-print(prod_vetorial(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
-print(projecao(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
-print(modulo_prod_vet(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor()))
+print("Digite o vetor 2 (i j k): ")
+aux2 = input()
+aux2_vet = aux2.split()
+vetor2 = Vetor(aux2_vet[0], aux2_vet[1], aux2_vet[2])
 
-#PARA TRES VETORES
-vetor3 = Vetor(7, 8, 9)
-print(prod_misto(vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor(), vetor3.create_and_see_vetor()))
+metodos_vetor_duplo(to_see(2), vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor())
+
+#SE 3 VETORES
+if quant_vet == 3: 
+    print("Digite o vetor 3 (i j k): ")
+    aux3 = input()
+    aux3_vet = aux3.split()
+    vetor3 = Vetor(aux3_vet[0], aux3_vet[1], aux3_vet[2])
+    metodos_vetor_triplo(to_see(3), vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor(), vetor3.create_and_see_vetor())
+elif quant_vet == 2:
+    print()
+else:
+    print("ERRO")
+

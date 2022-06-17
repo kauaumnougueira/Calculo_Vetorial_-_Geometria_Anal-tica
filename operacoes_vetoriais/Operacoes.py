@@ -1,4 +1,4 @@
-from math import math
+import math
 '''
 FUNÇÕES DE OPEAÇÕES DE VETORES
 -1 ADIÇÃO (15)
