@@ -52,5 +52,5 @@ def projecao(vetor1, vetor2):
 def modulo_prod_vet(vetor1, vetor2):
     pot1 = [vetor1[0] ** 2, vetor1[1] ** 2, vetor1[2] ** 2]
     pot2 = [vetor2[0] ** 2, vetor2[1] ** 2, vetor2[2] ** 2]
-    result = math.sqr(sum(pot1)) * math.sqr(sum(pot2)) 
+    result = math.sqrt(sum(pot1)) * math.sqrt(sum(pot2)) 
     return result

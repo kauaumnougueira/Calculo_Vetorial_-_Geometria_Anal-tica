@@ -32,7 +32,7 @@ if quant_vet == 3:
     vetor3 = Vetor(aux3_vet[0], aux3_vet[1], aux3_vet[2])
     metodos_vetor_triplo(to_see(3), vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor(), vetor3.create_and_see_vetor())
 elif quant_vet == 2:
-    print()
+    print() 
 else:
     print("ERRO")
 
