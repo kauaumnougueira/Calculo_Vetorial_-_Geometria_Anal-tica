@@ -1,4 +1,4 @@
-from Operacoes import *
+from operacoes_vetoriais.Operacoes import *
 
 '''
 1- PARALELOGRAMO (7)

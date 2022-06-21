@@ -50,7 +50,7 @@ def projecao(vetor1, vetor2):
 
 #MÓDULO DO PRODUTO VETORIAL
 def modulo_prod_vet(vetor1, vetor2):
-    pot1 = [vetor1[0] ** 2, vetor1[1] ** 2, vetor1[2] ** 2]
-    pot2 = [vetor2[0] ** 2, vetor2[1] ** 2, vetor2[2] ** 2]
-    result = math.sqrt(sum(pot1)) * math.sqrt(sum(pot2)) 
+    lol = prod_vetorial(vetor1, vetor2)
+    pot1 = [lol[0] ** 2, lol[1] ** 2,lol[2] ** 2]
+    result = math.sqrt(sum(pot1))
     return result
