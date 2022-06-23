@@ -12,6 +12,8 @@ class Vetor():
         vetor.append(self.i)
         vetor.append(self.j)
         vetor.append(self.k)
-        int_vetor = list(map(int, vetor))
+        int_vetor = list(map(int, vetor)) #TRANSFORMA EM INTEIRO
         return int_vetor
+    
+
     

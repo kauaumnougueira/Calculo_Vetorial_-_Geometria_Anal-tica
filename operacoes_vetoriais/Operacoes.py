@@ -1,4 +1,5 @@
 import math
+from winreg import REG_RESOURCE_REQUIREMENTS_LIST
 '''
 FUNÇÕES DE OPEAÇÕES DE VETORES
 -1 ADIÇÃO (15)
@@ -12,7 +13,6 @@ FUNÇÕES DE OPEAÇÕES DE VETORES
 
 
 #ADIÇÂO
-
 def adicao(vetor1, vetor2):
     result = [vetor_1 + vetor_2 for vetor_1, vetor_2 in zip(vetor1, vetor2)]
     return result
@@ -53,4 +53,20 @@ def modulo_prod_vet(vetor1, vetor2):
     lol = prod_vetorial(vetor1, vetor2)
     pot1 = [lol[0] ** 2, lol[1] ** 2,lol[2] ** 2]
     result = math.sqrt(sum(pot1))
+    return result
+
+def modulo_prod_esc(vetor1, vetor2):
+    lol1 = [vetor1[0]**2, vetor1[1]**2, vetor1[2]**2]
+    lol11 = sum(lol1)
+    lol2 = [vetor2[0]**2, vetor2[1]**2, vetor2[2]**2]
+    lol21 = sum(lol2)
+    result = math.sqrt(lol11) * math.sqrt(lol21)
+    return result
+
+#OPERAÇÕES TRIGONOMETRICAS
+
+#COSSENO
+def cosseno_angulo(vetor1,vetor2):
+    lol = prod_escalar(vetor1, vetor2)/modulo_prod_esc(vetor1, vetor2)
+    result = math.degrees(math.acos(lol))
     return result

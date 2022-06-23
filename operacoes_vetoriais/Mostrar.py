@@ -5,7 +5,7 @@ from operacoes_vetoriais.geometria.Volumes import *
 #MOSTRA TABELA
 def to_see(x):
     if x == 2:
-        print("-1 ADIÇÃO \n-2 SUBTRAÇÃO \n-3 PRODUTO ESCALAR \n-4 PRODUTO VETORIAL\n-5 PROJEÇÃO \n-6 MÓDULO DO PRODUTO VETORIAL")
+        print("-1 ADIÇÃO \n-2 SUBTRAÇÃO \n-3 PRODUTO ESCALAR \n-4 PRODUTO VETORIAL\n-5 PROJEÇÃO \n-6 MÓDULO DO PRODUTO VETORIAL \n-7 ÂNGULO")
         print("Escolha um ou mais operações (digite os numeros respectivos) (num num)")
         escolha = input()
         escolhido = escolha.split()
@@ -34,6 +34,8 @@ def metodos_vetor_duplo(escolhido, vetor1, vetor2):
             print(f"Projeção do {vetor1} sobre o {vetor2}: ", projecao(vetor1, vetor2))
         elif escolhido[i] == '6':
             print(f"Modulo do produto vetorial do {vetor1} e {vetor2}: ", modulo_prod_vet(vetor1, vetor2))
+        elif escolhido[i] == '7':
+            print("angulo: ", cosseno_angulo(vetor1, vetor2)) 
         else:
             print("Escolha não identificada")
     print("paralelogramo: ", paralelogramo(vetor1, vetor2))

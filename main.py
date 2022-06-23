@@ -2,6 +2,15 @@ from operacoes_vetoriais.Vetor import *
 from operacoes_vetoriais.Operacoes import *
 from operacoes_vetoriais.Mostrar import *
 
+'''
+IMPLEMENTAR:
+EQUAÇÕES DE RETAS
+EQUAÇOES DE PLANOS
+POSIÇÃO RELATIVA
+TIPOS
+CONICAS
+'''
+
 print("--------------------------------------")
 print("Cálculo Vetorial e Geometria Analítica")
 print("--------------------------------------")
@@ -29,7 +38,6 @@ if quant_vet == 3:
     vetor3 = Vetor(aux3_vet[0], aux3_vet[1], aux3_vet[2])
     metodos_vetor_triplo(to_see(3), vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor(), vetor3.create_and_see_vetor())
 elif quant_vet == 2:
-    print() 
     metodos_vetor_duplo(to_see(2), vetor1.create_and_see_vetor(), vetor2.create_and_see_vetor())
 else:
     print("ERRO")
